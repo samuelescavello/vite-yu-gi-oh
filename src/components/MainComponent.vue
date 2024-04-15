@@ -1,5 +1,6 @@
 <template>
-    <main class="container">
+    <main class="container my-3 ">
+        <div class="found my-3 "><h6 class="text-white p-3">found 20 cards</h6></div>
         <CardList/>
     </main>
 </template>
@@ -16,6 +17,9 @@ import CardList from './CardList.vue'
 
 <style lang="scss" scoped>
     main{
-        background-color: white
+        background-color: white;
+    }
+    .found{
+        background-color: #212529;
     }
 </style>

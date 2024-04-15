@@ -22,7 +22,7 @@ export default {
     .card{
         background-color: #D48F38;
     }
-    .card-text{
+    .card-body{
         min-height: 120px;
     }
     span{
