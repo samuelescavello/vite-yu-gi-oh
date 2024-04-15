@@ -1,19 +1,17 @@
 <template>
-    <header>
-        <h1 class="p-3 text-uppercase">Yu-Gi-Oh Api</h1>
-    </header>
-        
- 
+    <main class="container">
+        <h2>hshshshshs</h2>
+    </main>
 </template>
 
 <script>
     export default {
-        name: 'HeaderComponent',
+        name: 'MainComponent',
     }
 </script>
 
 <style lang="scss" scoped>
-    header{
+    main{
         background-color: white
     }
 </style>
