@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3" v-for="card in store.cards " :key="card.id">
-                <CardComponent :id="card.id" :nome="card.name" :specie="card.archetype" :immagine="card.image_url"/>
+                <CardComponent :id="card.id" :nome="card.name" :specie="card.archetype" :immagine="card.card_images[0].image_url"/>
             </div>
         </div>
     </div>

@@ -22,11 +22,12 @@ import {store} from './store.js';
       getCard(){
         axios.get(this.store.ApiUrl).then((res) => {
           this.store.cards=res.data.data
+          console.log(this.store.cards)
         }).catch(function (error) {
           console.log(error);
         }).finally(function () {
           // always executed
-        })
+        });
       }
     },
     created(){

@@ -1,6 +1,5 @@
 <template>
     <main class="container">
-        <h2>hshshshshs</h2>
         <CardList/>
     </main>
 </template>
