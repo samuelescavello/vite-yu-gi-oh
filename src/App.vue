@@ -20,9 +20,8 @@ import {store} from './store.js';
     },
     methods: {
       getCard(){
-        axios.get(store.ApiUrl).then((res) => {
+        axios.get(this.store.ApiUrl).then((res) => {
           this.store.cards=res.data.data
-          console.log(res)
         })
       }
     },
