@@ -20,8 +20,9 @@ import {store} from './store.js';
     },
     methods: {
       getCard(){
-        axios.get(this.store.ApiUrl).then((res) => {
-          this.store.cards=res.data.data
+        axios.get(this.store.ApiUrl + this.store.endpoint.infCard, this.store.options).then((res) => {
+          this.store.cards=res.data.data;
+
           console.log(this.store.cards)
         }).catch(function (error) {
           console.log(error);
@@ -31,7 +32,7 @@ import {store} from './store.js';
       }
     },
     created(){
-      this.getCard()
+      this.getCard();
     }
   }
 </script>
