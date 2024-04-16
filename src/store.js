@@ -3,7 +3,8 @@ import {reactive} from 'vue';
 export const store = reactive({
     ApiUrl: 'https://db.ygoprodeck.com/api/v7/',
     endpoint:{
-        infCard: 'cardinfo.php'
+        infCard: 'cardinfo.php',
+        archetype: 'archetypes.php'
     },
     options: {
         params:{
@@ -14,4 +15,5 @@ export const store = reactive({
     },
     statusFilter: '',
     cards: [],
+    archetypeList:[],
 })

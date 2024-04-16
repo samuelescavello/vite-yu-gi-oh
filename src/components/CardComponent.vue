@@ -23,7 +23,7 @@ export default {
         background-color: #D48F38;
     }
     .card-body{
-        min-height: 140px;
+        min-height: 170px;
     }
     span{
         font-weight: 700;
