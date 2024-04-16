@@ -1,6 +1,6 @@
 <template>
   <HeaderComponent/>
-  <MainComponent/>
+  <MainComponent @statusSearch="getCard"/>
 </template>
 
 <script>
@@ -20,6 +20,7 @@ import {store} from './store.js';
     },
     methods: {
       getCard(){
+        console.log(this.store.statusFilter)
         axios.get(this.store.ApiUrl + this.store.endpoint.infCard, this.store.options).then((res) => {
           this.store.cards=res.data.data;
 

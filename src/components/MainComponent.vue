@@ -1,7 +1,7 @@
 <template>
     <div class="container my-3 selected">
-        <select class="form-select" aria-label="Default select example">
-         <option selected>Open this select menu</option>
+        <select class="form-select" @change="$emit('statusSearch')" v-model="store.statusFilter">
+         <option value="">All</option>
          <option value="1">One</option>
          <option value="2">Two</option>
          <option value="3">Three</option>
@@ -14,11 +14,17 @@
 </template>
 
 <script>
+import {store} from '../store.js';
 import CardList from './CardList.vue'
     export default {
         name: 'MainComponent',
         components: {
             CardList
+        },
+        data(){
+            return{
+                store
+            }
         }
     }
 </script>

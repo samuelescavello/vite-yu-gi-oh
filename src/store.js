@@ -8,8 +8,10 @@ export const store = reactive({
     options: {
         params:{
             num: 20,
-            offset: 0
+            offset: 0,
+            
         }
     },
+    statusFilter: '',
     cards: [],
 })
